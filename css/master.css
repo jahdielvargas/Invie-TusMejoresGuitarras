@@ -39,6 +39,11 @@ body{
 }
 .portada button{
   margin-bottom: 70px;
+  padding: 7px;
+  background: #FD324E;
+  border-radius: 5px;
+  border: none;
+  color: white;
 }
 .title-b{
   font-size: 50px;
@@ -55,6 +60,7 @@ body{
   padding: 10px;
   margin: 10px;
   border: 1px solid #1F313C;
+  border-radius: 8px;
 }
 .guitarra ol{
   padding: 0;
