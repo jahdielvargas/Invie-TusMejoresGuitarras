@@ -6,12 +6,17 @@ body{
   width: 800px;
   margin: auto;
 }
+.header{
+  position: relative;
+}
 .logotipo{
   display: inline-block;
 }
 .menu{
   font-size: 24px;
   display: inline-block;
+  position: absolute;
+  right: 0;
 }
 .menu li{
   display: inline-block;
@@ -49,7 +54,6 @@ body{
 .guitarra{
   padding: 10px;
   margin: 10px;
-  overflow: hidden;
   border: 1px solid #1F313C;
 }
 .guitarra ol{
@@ -63,7 +67,11 @@ body{
 }
 .derecha{
   float: right;
+  position: relative;
+  top: -127px;
 }
 .izquierda{
   float: left;
+  position: relative;
+  top: 80px;
 }
