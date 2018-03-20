@@ -46,3 +46,24 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-size: 35px;
 }
+.guitarra{
+  padding: 10px;
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid #1F313C;
+}
+.guitarra ol{
+  padding: 0;
+}
+.contenedor-guitarra-a{
+  padding-left: 20px;
+}
+.contenedor-guitarra-b{
+  margin-left: 370px;
+}
+.derecha{
+  float: right;
+}
+.izquierda{
+  float: left;
+}
