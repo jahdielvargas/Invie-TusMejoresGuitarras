@@ -81,3 +81,17 @@ body{
   position: relative;
   top: 80px;
 }
+.footer{
+  background: #273B47;
+}
+.contacto img{
+  display: block;
+}
+.contacto strong{
+  display: block;
+}
+.contacto a{
+  text-decoration: none;
+  color: white;
+  margin: 10px 10px 10px 0;
+}
