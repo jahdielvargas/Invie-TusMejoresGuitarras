@@ -5,12 +5,21 @@ body{
 .contenedor{
   width: 800px;
   margin: auto;
+  position: relative;
 }
 .header{
   position: relative;
 }
+.background{
+  background-image: url('../images/background.png');
+  background-size: cover;
+}
 .logotipo{
+  margin-left: 0;
   display: inline-block;
+}
+.titulo span{
+  text-decoration: underline;
 }
 .menu{
   font-size: 24px;
@@ -18,20 +27,29 @@ body{
   position: absolute;
   right: 0;
 }
+.menu a{
+  text-decoration: none;
+  color: white;
+}
 .menu li{
   display: inline-block;
   margin-left: 30px;
 }
 .menu li:before{
   content: "∘";
-  font-size: 50px;
-  line-height: 20px;
-  color: blue;
+  font-size: 30px;
+  line-height: 50px;
+  color: white;
 }
 .portada{
-  background-image: url('../images/background.png');
   padding: 20px;
   color: white;
+}
+.textos{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .titulo{
   font-family: 'Montserrat', sans-serif;
@@ -43,15 +61,16 @@ body{
   font-size: 24px;
   margin-top: 0;
 }
-.portada button{
-  margin-bottom: 70px;
-}
 .button{
-  padding: 7px;
+  padding: 7px 12px;
   background: #FD324E;
-  border-radius: 5px;
+  border-radius: 15px;
   border: none;
   color: white;
+  font-size: 18px;
+  background: linear-gradient(to left, #FE344E, #FF7250);
+  cursor: pointer;
+  text-decoration: none;
 }
 .title-b{
   font-size: 50px;
@@ -59,6 +78,7 @@ body{
 }
 .guitarras{
   color: #1F313C;
+  margin-bottom: 60px;
 }
 .guitarras h2{
   font-family: 'Montserrat', sans-serif;
@@ -66,18 +86,23 @@ body{
 }
 .guitarra{
   padding: 10px;
-  margin: 10px;
+  margin: 10px 10px 40px 10px;
   border: 1px solid #1F313C;
   border-radius: 8px;
 }
 .guitarra ol{
   padding: 0;
 }
+.guitarra.b{
+  height: 190px;
+}
 .contenedor-guitarra-a{
   padding-left: 20px;
 }
 .contenedor-guitarra-b{
   margin-left: 370px;
+  position: relative;
+  bottom: 90px;
 }
 .derecha{
   float: right;
@@ -87,10 +112,10 @@ body{
 .izquierda{
   float: left;
   position: relative;
-  top: 80px;
 }
 .footer{
   background: #273B47;
+  padding: 50px 10px;
 }
 .footer .contenedor{
   display: flex;
@@ -118,7 +143,6 @@ body{
   color: white;
   display: flex;
   width: 400px;
-  padding: 50px 10px;
 }
 .col1, .asunto{
   display: flex;
@@ -130,14 +154,26 @@ body{
 .asunto{
   align-items: flex-start;
 }
+.asunto .button{
+  margin-top: 15px;
+}
 .formulario label, .sexo, .interes{
   margin-bottom: 10px;
+}
+input, textarea{
+  outline: 0;
+}
+input:focus, textarea:focus{
+  background: lightgray;
 }
 .intereses label{
   font-size: 12px;
 }
 .sexo{
   margin-top: 10px;
+}
+.tabla{
+  margin: 50px 0;
 }
 table{
   width: 100%;
